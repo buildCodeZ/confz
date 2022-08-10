@@ -359,8 +359,8 @@ def read(s):
 
 pass
 loads = read
-def loadfile(filepath):
-    return read(fread(filepath))
+def loadfile(filepath, coding="utf-8"):
+    return read(fread(filepath, coding))
 
 pass
 import re
